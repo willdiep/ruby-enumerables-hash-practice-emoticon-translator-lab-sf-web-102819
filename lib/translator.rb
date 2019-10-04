@@ -31,6 +31,14 @@ end
 
 
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(yaml_file_path, jpn_emoticon)
+    hash_library = load_library(yaml_file_path)
+    if hash_library["get_meaning"][jpn_emoticon] 
+        hash_library["get_meaning"][jpn_emoticon] 
+    else
+        "Sorry, that emoticon was not found"
+    end 
 end
+
+
+
