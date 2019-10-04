@@ -21,9 +21,9 @@ end
 
 
 def get_japanese_emoticon(yaml_file_path, eng_emoticon)
-    
-    if load_library(yaml_file_path)["get_emoticon"][eng_emoticon]
-        load_library(yaml_file_path)["get_emoticon"][eng_emoticon]
+    hash_library = load_library(yaml_file_path)
+    if hash_library["get_emoticon"]
+        hash_library["get_emoticon"][eng_emoticon]
     else
         "Sorry, that emoticon was not found"
     end
