@@ -27,8 +27,6 @@ def get_japanese_emoticon(yaml_file_path, eng_emoticon)
     else
         "Sorry, that emoticon was not found"
     end
-
-end
 end
 
 
