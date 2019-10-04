@@ -20,10 +20,15 @@ end
 
 
 
-def get_japanese_emoticon
-  # code goes here
-end
+def get_japanese_emoticon(yaml_file_path, eng_emoticon)
+    
+    if load_library(yaml_file_path)["get_emoticon"][eng_emoticon]
+        load_library(yaml_file_path)["get_emoticon"][eng_emoticon]
+    else
+        "Sorry, emoticon not found"
+    end
 
+end
 def get_english_meaning
   # code goes here
 end
